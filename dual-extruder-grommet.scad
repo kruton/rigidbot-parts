@@ -36,7 +36,7 @@ difference() {
 	// The things that exist
 	union() {
 		roundrect(opening_width, opening_length, opening_height+2*lip_height);
-		for (a=[0, 3.2+lip_height]) {
+		for (a=[0, opening_height+lip_height]) {
 			translate([-lip_overhang, 0, a])
 				assign(lip=lip_overhang*2)
 					roundrect(opening_width+lip, opening_length+lip, lip_height);
